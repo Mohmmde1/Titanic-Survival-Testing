@@ -1,5 +1,5 @@
 # Read the Titanic data-set
-titanic <- read.csv("C:/Users/Devex/Downloads/PSDA/train.csv")
+titanic <- read.csv(file.path(getwd(), 'data', 'dataset.csv'))
 
 # Create a contingency table of Survived and Sex
 table <- table(titanic$Survived, titanic$Sex)
